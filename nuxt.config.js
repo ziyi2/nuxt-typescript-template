@@ -56,7 +56,10 @@ module.exports = {
   */
   css: [],
   build: {
-    vendor: ['axios', 'vue-material']
+    vendor: ['axios', 'vue-material'],
+    babel: {
+      presets: ['es2015', 'stage-3']
+    }
   },
   modules: [
     "@nuxtjs/axios",

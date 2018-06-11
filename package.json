@@ -16,7 +16,8 @@
     "build": "nuxt build",
     "pro_server": "nuxt start",
     "dev_server": "set NODE_ENV=production && node ./server",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "backpack": "backpack build"
   },
   "devDependencies": {
     "@types/node": "^9.4.6",

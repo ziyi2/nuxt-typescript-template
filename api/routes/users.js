@@ -1,4 +1,5 @@
-const { Router } = require('express')
+// const { Router } = require('express')
+import { Router } from 'express'
 const router = Router()
 
 // Mock Users
