@@ -1,25 +1,23 @@
 {
   "name": "nuxt-typescript-template",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "zhuxiankang <115840480@qq.com>",
   "private": true,
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "nuxt": "^1.3.0",
+    "nuxt-property-decorator": "^1.2.0",
+    "vue-material": "^1.0.0-beta-10.2",
+    "vuex-class": "^0.3.0"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "nuxt": "^1.0.0"
+    "generate": "nuxt generate"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "@types/node": "^9.4.6",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2"
   }
 }

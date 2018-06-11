@@ -1,22 +1,6 @@
 # nuxt-typescript-template
 
-> Nuxt.js project
+## 依赖
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+- [nuxt-property-decorator](https://github.com/nuxt-community/nuxt-property-decorator)
+- [vue-material](https://github.com/vuematerial/vue-material)
