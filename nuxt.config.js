@@ -55,11 +55,18 @@ module.exports = {
   ** Build configuration
   */
   css: [],
-  build: {},
+  build: {
+    vendor: ['axios', 'vue-material']
+  },
   modules: [
     "@nuxtjs/axios",
     "~/modules/typescript.js"
   ],
   plugins: ['~/plugins/vue-material'],
-  axios: {}
+  axios: {},
+
+  serverMiddleware: [
+    // API middleware
+    '~/api/index.js'
+  ]
 }
