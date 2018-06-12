@@ -19,12 +19,6 @@ if (config.dev) {
   builder.build()
 }
 
-// Require API routes
-// const users = require('./routes/users')
-
-// Import API Routes
-// app.use(users)
-
 // Give nuxt middleware to express
 app.use(nuxt.render)
 

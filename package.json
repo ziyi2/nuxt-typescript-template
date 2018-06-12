@@ -15,9 +15,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "pro_server": "node ./server",
-    "dev_server": "set NODE_ENV=production && node ./server/dev_server",
+    "pro": "nuxt start",
+    "server": "node ./server",
     "generate": "nuxt generate"
   },
   "devDependencies": {
