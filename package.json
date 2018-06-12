@@ -13,14 +13,17 @@
     "vuex-class": "^0.3.0"
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "pro": "nuxt start",
-    "server": "node ./server",
+    "nuxt": "nuxt",
+    "build": "nuxt build && backpack build",
+    "start": "nuxt start",
+    "dev": "cross-env NODE_ENV=production node build/main.js",
+    "pro": "NODE_ENV=production node ./server",
     "generate": "nuxt generate"
   },
   "devDependencies": {
     "@types/node": "^9.4.6",
+    "backpack-core": "^0.7.0",
+    "cross-env": "^5.1.6",
     "ts-loader": "^3.5.0",
     "typescript": "^2.7.2"
   }

@@ -75,38 +75,24 @@ module.exports = require("nuxt");
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const express = __webpack_require__(2);
-const Builder = __webpack_require__(0).Builder;
-const Nuxt = __webpack_require__(0).Nuxt;
-
-const app = express();
-
-const host = process.env.HOST || '127.0.0.1';
-const port = process.env.PORT || 3000;
-
-// Import and set Nuxt.js options
-let config = __webpack_require__(3);
-config.dev = !("development" === 'production');
-
-const nuxt = new Nuxt(config);
-
-// Start build process in dev mode
+var express = __webpack_require__(2);
+var Builder = __webpack_require__(0).Builder;
+var Nuxt = __webpack_require__(0).Nuxt;
+var app = express();
+var host = process.env.HOST || '127.0.0.1';
+var port = process.env.PORT || 3000;
+var str = '111';
+console.log(str);
+var config = __webpack_require__(3);
+config.dev = !("production" === 'production');
+var nuxt = new Nuxt(config);
 if (config.dev) {
-  const builder = new Builder(nuxt);
-  builder.build();
+    var builder = new Builder(nuxt);
+    builder.build();
 }
-
-// Require API routes
-// const users = require('./routes/users')
-
-// Import API Routes
-// app.use(users)
-
-// Give nuxt middleware to express
 app.use(nuxt.render);
-
-// Start express server
 app.listen(port, host);
+
 
 /***/ }),
 /* 2 */
@@ -159,10 +145,7 @@ module.exports = {
   */
   css: [],
   build: {
-    vendor: ['axios', 'vue-material'],
-    babel: {
-      presets: ['es2015', 'stage-3']
-    }
+    vendor: ['axios', 'vue-material']
   },
   modules: ["@nuxtjs/axios", "~/modules/typescript.js"],
   plugins: ['~/plugins/vue-material'],

@@ -17,6 +17,7 @@
     "baseUrl": ".",
     "allowJs": true,
     "paths": {
+      "~/*" : ["./*"],
       "~/": ["./"],
       "~/assets/*": ["./assets/*"],
       "~/components/*": ["./components/*"],
@@ -24,7 +25,9 @@
       "~/pages/*": ["./pages/*"],
       "~/plugins/*": ["./plugins/*"],
       "~/static/*": ["./static/*"],
-      "~/store/*": ["./store/*"]
+      "~/store/*": ["./store/*"],
+      "~router": ["./.nuxt/router"],
+      "~/api/*": ["./api/*"],
     }
   }
 }
