@@ -1,5 +1,7 @@
 module.exports = function() {
   // Add .ts extension for store, middleware and more
+  // nuxt-start need zhuxiankang add at 2018/06/12 
+  if(!this.nuxt.options.extensions) this.nuxt.options.extensions = ['js']
   this.nuxt.options.extensions.push("ts")
   // Extend build
   this.extendBuild(config => {
